@@ -1,0 +1,17 @@
+h1{
+    background-color:orange;
+    text-align:left;
+    font-size:3rem;
+    width:21%;
+    padding:1rem 0 1rem 0;
+    margin:10px;
+}
+
+.instructions{
+    background-color: rgb(248, 230, 209);
+    height:25%;
+    font-size:20px;
+    line-height:50px;
+    margin:10px;
+    width:50%;
+}
