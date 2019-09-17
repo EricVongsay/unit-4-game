@@ -46,7 +46,8 @@ function startGame(){
 }
 
 //clicking the crystal function
-function click(clickedCrystal){
+function clicked(clickedCrystal){
+
     score+=clickedCrystal.value;
 
     $(".liveScore").text(score);
@@ -54,11 +55,15 @@ function click(clickedCrystal){
     //checking score conditions to change wins and losses
     if(score===targetNumber){
         wins++;
-        $("#statusAlert").html("<p>You win!</p>");
+        $("#statusAlert").html("You win!");
+        $("#winScore").text(wins);
+        startGame();
 
     }else if(score > targetNumber){
-        losses--;
-        $("#statusAlert").html("<p>You lose!</p>");
+        losses++;
+        $("#statusAlert").html("You lose!");
+        $("#lossScore").text(losses);
+        startGame();
     }
 
     
@@ -66,4 +71,21 @@ function click(clickedCrystal){
 }
 
 
+
+
 startGame();
+//calling the clicked crystal function with jQuery click
+$("#crystal1").click(function(){
+    clicked(crystals.crystal1);
+})
+$("#crystal2").click(function(){
+    clicked(crystals.crystal2);
+})
+$("#crystal3").click(function(){
+    clicked(crystals.crystal3);
+})
+$("#crystal4").click(function(){
+    clicked(crystals.crystal4);
+})
+
+
