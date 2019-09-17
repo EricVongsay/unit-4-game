@@ -17,17 +17,16 @@ function randomNumber(min,max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-//testing random number generator
-console.log(randomNumber(1,120));
 
 //initializing game
 function startGame(){
-    //setting target number between 19-120
+
+    //setting target number between 19-120 everytime startGame() function is called
     targetNumber = randomNumber(19,120);
 
         console.log(targetNumber);
-    //setting crystal values for each crystal randomly between 1-12
 
+    //setting crystal values for each crystal randomly between 1-12
     crystals.crystal1.value=randomNumber(1,12);
     crystals.crystal2.value=randomNumber(1,12);
     crystals.crystal3.value=randomNumber(1,12);
@@ -38,6 +37,31 @@ function startGame(){
         console.log(crystals.crystal3.value);
         console.log(crystals.crystal4.value);
 
+    //resetting score
+    score=0;
+    $(".targetScore").text(targetNumber);
+    $(".liveScore").text(score);
+    
+    
+}
+
+//clicking the crystal function
+function click(clickedCrystal){
+    score+=clickedCrystal.value;
+
+    $(".liveScore").text(score);
+
+    //checking score conditions to change wins and losses
+    if(score===targetNumber){
+        wins++;
+        $("#statusAlert").html("<p>You win!</p>");
+
+    }else if(score > targetNumber){
+        losses--;
+        $("#statusAlert").html("<p>You lose!</p>");
+    }
+
+    
 
 }
 
