@@ -15,3 +15,64 @@ h1{
     margin:10px;
     width:50%;
 }
+.score, .winLoseCount{
+    float:left;
+}
+
+.score{
+    width:10%;
+    padding:3rem;
+    background-color:rgb(116, 198, 141);
+    margin:10px;
+}
+
+
+.winLoseCount{
+    background-color:rgb(125, 250, 251);
+    margin:10px;
+    width: 3%;
+    padding:2rem;
+    line-height:10px;
+    
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.images{
+    margin:10px;
+}
+
+li{
+    display:inline-block;
+}
+
+img{
+    width: 50px;
+    height:50px;
+}
+
+.scoreText, .liveScore{
+    margin:10px;
+    background-color:rgb(77, 160, 151);
+    width:10%;
+}
+.scoreText{
+    padding: 3px 6rem 3px 3px;
+    
+}
+
+.liveScore{
+    font-size:2rem;
+    padding:3rem;
+    text-align: left;
+
+}
