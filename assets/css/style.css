@@ -15,15 +15,16 @@ h1{
     margin:10px;
     width:50%;
 }
-.score, .winLoseCount{
+.targetScore, .winLoseCount{
     float:left;
 }
 
-.score{
+.targetScore{
     width:10%;
     padding:3rem;
     background-color:rgb(116, 198, 141);
     margin:10px;
+    font-size:3rem;
 }
 
 
@@ -31,7 +32,7 @@ h1{
     background-color:rgb(125, 250, 251);
     margin:10px;
     width: 3%;
-    padding:2rem;
+    padding:3.5rem;
     line-height:10px;
     
 }
