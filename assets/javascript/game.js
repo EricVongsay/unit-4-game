@@ -5,7 +5,8 @@ var losses=0;
 var score=0;
 
 //giving value to crystals with an array of arrays
-var crystals={crystal1: {value:0}, crystal2: {value:0}, crystal3: {value:0}, crystal4: {value:0}};
+var crystals={
+    crystal1: {value:0}, crystal2: {value:0}, crystal3: {value:0}, crystal4: {value:0}};
 
 
 

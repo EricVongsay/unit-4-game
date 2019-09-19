@@ -1,8 +1,11 @@
+body{
+    background-image: url("../images/wallpaper.png");
+}
 h1{
     background-color:orange;
     text-align:left;
     font-size:3rem;
-    width:21%;
+    width:35%;
     padding:1rem 0 1rem 0;
     margin:10px;
 }
@@ -35,6 +38,9 @@ h1{
     padding:3.5rem;
     line-height:10px;
     
+}
+#statusAlert{
+    color:red;
 }
 
 
